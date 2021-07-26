@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Locale = 'br'
+Config.Locale = 'en'
 
 Config.serverLogo = 'https://i.imgur.com/AcgDL9f.png'
 
@@ -11,7 +11,7 @@ Config.font = {
 
 Config.date = {
 	format	 	= 'default',
-	AmPm		= false
+	AmPm		= true
 }
 
 Config.voice = {
@@ -34,8 +34,8 @@ Config.vehicle = {
 	maxSpeed = 240,
 
 	keys = {
-		seatbelt 	= 'K',
-		cruiser		= 'CAPS',
+		seatbelt 	= 'B',
+		cruiser		= 'K',
 		signalLeft	= 'LEFT',
 		signalRight	= 'RIGHT',
 		signalBoth	= 'DOWN',
@@ -43,7 +43,7 @@ Config.vehicle = {
 }
 
 Config.ui = {
-	showServerLogo		= true,
+	showServerLogo		= false,
 
 	showJob		 		= true,
 
@@ -56,11 +56,11 @@ Config.ui = {
 	showLocation 		= true,
 	showVoice	 		= true,
 
-	showHealth			= true,
-	showArmor	 		= true,
-	showStamina	 		= true,
-	showHunger 			= true,
-	showThirst	 		= true,
+	showHealth			= false,
+	showArmor	 		= false,
+	showStamina	 		= false,
+	showHunger 			= false,
+	showThirst	 		= false,
 
 	showMinimap			= false,
 
