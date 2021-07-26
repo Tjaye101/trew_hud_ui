@@ -1,4 +1,4 @@
-﻿*, *:before, *:after {
+*, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -54,8 +54,8 @@ div.separator { display: block; clear: both; width: 100%; }
 .info.server { top: 45px; right: 26px; width: 90px; height: 90px; }
 .info.server #server img { max-width: 100%; opacity: 0.75; }
 
-.info.player { top: 140px; right: 25px; text-align: right;}
-.info.player #job span { font-size: 24px; color: #FFF; font-weight: 900; text-transform: uppercase; text-shadow: 0px 1px 1px rgba(0,0,0,0.75); }
+.info.player { top: 0px; right: 25px; text-align: right;}
+.info.player #job span { font-size: 24px; color: #ffffff; font-weight: 900; text-transform: uppercase; text-shadow: 0px 1px 1px rgba(0,0,0,0.75); }
 
 
 
@@ -90,29 +90,29 @@ div.separator { display: block; clear: both; width: 100%; }
 
 
 .info.vehicle #speedometer { position: relative; width: 270px; height: 130px; }
-.info.vehicle #speedometer svg { position: absolute; top: 0; left: 50%; transform: translate(-50%,0) rotate(138deg); width: 130px; }
+.info.vehicle #speedometer svg { position: absolute; top: -205; left: -223%; transform: translate(-50%,0) rotate(138deg); width: 340px; }
 
-.info.vehicle #speedometer svg circle { display: block; fill: transparent; stroke-width: 5px; stroke-linecap: round; stroke-dasharray: 283; stroke-dashoffset: 75; transform-origin: 50% 50%; }
+.info.vehicle #speedometer svg circle { display: block; fill: transparent; stroke-width: 3px; stroke-linecap: round; stroke-dasharray: 283; stroke-dashoffset: 75; transform-origin: 50% 50%; }
 .info.vehicle #speedometer svg circle.mask { stroke: rgba(0,0,0,0.35); }
 .info.vehicle #speedometer svg circle.speed { stroke: url(#speed-gradient); stroke-dashoffset: 180; }
 .info.vehicle #speedometer svg:first-child { z-index: 11; }
 
 
 .info.vehicle #speedometer svg circle { transition: all 250ms linear; }
-.info.vehicle #speedometer svg circle.zero { stroke: #00c3ff; stroke-dashoffset: 235; }
-.info.vehicle #speedometer svg circle.twentyfive { stroke: #18b70b; stroke-dashoffset: 180; }
-.info.vehicle #speedometer svg circle.fifty { stroke: #ff8000;  stroke-dashoffset: 125; }
-.info.vehicle #speedometer svg circle.seventyfive { stroke: #ff0000;  stroke-dashoffset: 75; }
+.info.vehicle #speedometer svg circle.zero { stroke: #b108ff; stroke-dashoffset: 235; }
+.info.vehicle #speedometer svg circle.twentyfive { stroke: #b108ff; stroke-dashoffset: 180; }
+.info.vehicle #speedometer svg circle.fifty { stroke: #b108ff;  stroke-dashoffset: 125; }
+.info.vehicle #speedometer svg circle.seventyfive { stroke: #b108ff;  stroke-dashoffset: 75; }
 
 
-.info.vehicle #speedometer #vehicle-speed { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; color: #FFF;}
+.info.vehicle #speedometer #vehicle-speed { position: absolute; top: 10%; left: -151%; transform: translate(-50%,-50%); text-align: center; color: #FFF;}
 .info.vehicle #speedometer #vehicle-speed span { display: block; font-weight: 900; font-size: 30px; text-shadow: 0px 1px 1px rgba(0,0,0,0.75); }
 
  .info.vehicle #speedometer #vehicle-speed strong { display: inline-block; font-size: 10px; font-weight: 900; padding: 2px 5px; border-radius: 100px; text-shadow: 0px 1px 1px rgba(0,0,0,0.75); transition: all 150ms linear; }
  .info.vehicle #speedometer #vehicle-speed strong.on { background: #18b70b; }
 
 .info.vehicle #speedometer #vehicle-gear,
-.info.vehicle #speedometer #vehicle-others { position: absolute; bottom: 0; left: 50%; width: 69px; transform: translate(-50%,0); margin: auto; border: 2px solid transparent; }
+.info.vehicle #speedometer #vehicle-others { position: absolute; bottom: 50; left: -150%; width: 80px; transform: translate(-60%,0); margin: auto; border: 2px solid transparent; }
 
 .info.vehicle #speedometer #vehicle-gear.pulsing { animation: trew-siren 1s infinite; }
 
@@ -120,21 +120,31 @@ div.separator { display: block; clear: both; width: 100%; }
 .info.vehicle #speedometer #vehicle-gear span { padding: 5px 15px 0 10px; }
 
 
-.info.vehicle #speedometer #vehicle-status-left { position: absolute; bottom: 0; left: 0; }
-.info.vehicle #speedometer #vehicle-status-left ul li { float: left; }
+.info.vehicle #speedometer #vehicle-status-left { position: absolute; bottom: 175; left: -430; }
+.info.vehicle #speedometer #vehicle-status-left ul li { float: none; }
 
-.info.vehicle #speedometer #vehicle-status-right { position: absolute; bottom: 0; right: 0; }
+.info.vehicle #speedometer #vehicle-status-right { position: absolute; bottom: 160; right: 10000; }
 .info.vehicle #speedometer #vehicle-status-right ul li { float: left; }
 
-.info.vehicle #speedometer li#seatbelt span { background: linear-gradient(180deg, #ff0000 0%, #aa0000 100%); }
-.info.vehicle #speedometer li#seatbelt.on span { background: linear-gradient(180deg, #18b70b 0%, #128c08 100%); }
+.blink{
+    background-color: red;
+}
 
-.info.vehicle #speedometer li#fuel span { background: linear-gradient(180deg, #ff8000 0%, #cd6700 100%); }
+@Keyframes blink{
+0%{opacity: 1;}
+50%{opacity: .0;}
+100%{opacity: 1;}
+}
+
+.info.vehicle #speedometer li#seatbelt span { background: linear-gradient(180deg, #aa0080d2, #aa0080d2 100%); animation: blink 1s linear infinite; }
+.info.vehicle #speedometer li#seatbelt.on span { background: linear-gradient(180deg, #b108ff 0%, #b108ff 100%); animation: none;}
+
+.info.vehicle #speedometer li#fuel span { background: linear-gradient(180deg, #aa0080d2 0%, #b108ff 100%); }
 
 .info.vehicle #speedometer li#lights.normal span,
-.info.vehicle #speedometer li#lights.high span { background: linear-gradient(180deg, #00c3ff 0%, #008fbb 100%); }
+.info.vehicle #speedometer li#lights.high span { background: linear-gradient(180deg, #b108ff 0%, #b108ff 100%); }
 
-.info.vehicle #speedometer li#signals.dying span { background: linear-gradient(180deg, #18b70b 0%, #128c08 100%); animation: trew-status-blink 750ms infinite; }
+.info.vehicle #speedometer li#signals.dying span { background: linear-gradient(180deg, #b108ff 0%, #b108ff 100%); animation: trew-status-blink 750ms infinite; }
 
 
 
@@ -169,9 +179,9 @@ div.separator { display: block; clear: both; width: 100%; }
 .info.radio { bottom: 19px; right: 25px; z-index: 11; }
 .info.radio #voice { width: 35px; height: 35px; border-radius: 50%; overflow: hidden; background: linear-gradient(180deg, #18b70b 0%, #128c08 100%); text-align: center; padding: 7px 0 0 0; transition: all 0.1s linear; }
 
-.info.radio #voice.whisper { background: linear-gradient(180deg, #ffb700 0%, #e0a102 100%); }
-.info.radio #voice.normal { background: linear-gradient(180deg, #18b70b 0%, #128c08 100%); }
-.info.radio #voice.shout { background: linear-gradient(180deg, #ff0000 0%, #aa0000 100%); }
+.info.radio #voice.whisper { background: linear-gradient(180deg, #b108ff 0%, #b108ff 100%); }
+.info.radio #voice.normal { background: linear-gradient(180deg, #b108ff 0%, #b108ff 100%); }
+.info.radio #voice.shout { background: linear-gradient(180deg, #b108ff 0%, #b108ff 100%); }
 .info.radio #voice i.fas { font-size: 18px; color: #FFF; }
 .info.radio #voice.speak { animation: trew-soundwave 1s infinite; }
 
