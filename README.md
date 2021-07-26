@@ -1,5 +1,17 @@
 # Trew HUD
 
+
+
+# what was done 
+
+-   Changed emojis for circles
+-   Added blinking light for when person doesn have sealtbelt on 
+-   Added look for core_hud
+
+
+# discord
+[Click me](https://discord.gg/2v8XRxMVff)
+
 ## Installation
 
 1.  Extract the .zip or Open the .zip.
@@ -14,7 +26,7 @@
 -   [es_extended](https://github.com/ESX-Org/es_extended)
 -   [esx_society](https://github.com/ESX-Org/esx_society)
 -   [esx_addonaccount](https://github.com/ESX-Org/esx_addonaccount)
-
+-   [core_hud](https://core.tebex.io/package/4345479) (everything about this hud shall be brought to the creator not me)
 
 ### Optional
 
@@ -32,7 +44,3 @@
 2. Click both CTRL and F, type in "none" 
 3. highlite wichever one it bring you to and click "change all occourrenses"
 4. Type in "block" and after that you can control everything from the config.lua
-
-
-
-
