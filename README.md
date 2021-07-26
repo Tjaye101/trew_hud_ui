@@ -1,11 +1,10 @@
-#Trew HUD
+# Trew HUD
 
 ## Installation
 
 1.  Extract the .zip or Open the .zip.
 2.  Place `trew_hud_ui` in your resources directory.
 3.  Add `start trew_hud_ui` to your server.cfg
-
 
 
 ## Special Instructions for the ESX version
@@ -27,6 +26,13 @@
 ### What you can disable
 
 -   [RadarWhileDriving](https://github.com/Flatracer/RadarWhileDriving)
+
+# Hud not Showing?
+1. head over to ui.html file located in the HTML files
+2. Click both CTRL and F, type in "none" 
+3. highlite wichever one it bring you to and click "change all occourrenses"
+4. Type in "block" and after that you can control everything from the config.lua
+
 
 
 
