@@ -9,7 +9,7 @@
 -   Added look for core_hud
 
 # Preview
-![image](https://user-images.githubusercontent.com/83477654/127196581-bc79c158-1d21-43c9-bb58-464b17d5202f.png)
+![image](https://user-images.githubusercontent.com/83477654/127196700-baac0520-a857-4e4d-8593-182c5816ff5f.png)
 ![image](https://user-images.githubusercontent.com/83477654/127196634-ecb55d5d-789a-4069-a871-9cdbbd497126.png)
 
 
