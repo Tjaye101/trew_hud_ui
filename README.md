@@ -8,6 +8,11 @@
 -   Added blinking light for when person doesn have sealtbelt on 
 -   Added look for core_hud
 
+# Preview
+![image](https://user-images.githubusercontent.com/83477654/127196581-bc79c158-1d21-43c9-bb58-464b17d5202f.png)
+![image](https://user-images.githubusercontent.com/83477654/127196634-ecb55d5d-789a-4069-a871-9cdbbd497126.png)
+
+
 
 # discord
 [Click me](https://discord.gg/2v8XRxMVff)
